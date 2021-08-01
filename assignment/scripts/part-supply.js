@@ -67,7 +67,8 @@ var c = 0
 
 while (a < supplyChanges[a]){
   console.log(`added ${supplyChanges[a]} parts.`);
-  a++;
+  a++; //Code stops here; since 'a'=2 at this point and the next number in the index is 0, the only thing I could think of doing is creating a new variable 'b'.
+  //How would this problem be solved more efficiently?
 } while (b > supplyChanges[a]){
   console.log(`removed ${supplyChanges[a]} parts.`);
   a++;
@@ -83,7 +84,7 @@ while (a < supplyChanges[a]){
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('9. Total supplies available is:');
 
-sum = 0
+sum = 0  //Did this require the sum variable or is there a different way?
 for (i=0; i<supplyChanges.length; i++){
   console.log(sum += supplyChanges[i]);
 }
